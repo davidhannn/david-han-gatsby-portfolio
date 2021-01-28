@@ -5,34 +5,35 @@ import Img from "gatsby-image"
 
 const AboutMe = () => {
 
-// const data = useStaticQuery(graphql`
-// {
-//     allContentfulAboutMe {
-//         edges {
-//         node {
-//             aboutMeImage {
-//                 fluid {
-//                     src
-//                     ...GatsbyContentfulFluid_tracedSVG
-//                     }
-//                 }
-//                 aboutMeSection {
-//                 aboutMeSection
-//                 }
-//         }
-//         }
-//     }
-// }
-// `)
+const data = useStaticQuery(graphql`
+{
+    allContentfulAboutMe {
+        nodes {
+          aboutMeImage {
+            fluid {
+              src
+              ...GatsbyContentfulFluid_tracedSVG
+            }
+          }
+          aboutMeSection {
+            aboutMeSection
+          }
+        }
+      }
+}
+`)
 
     return (
         <section id="about">
-            <h3>About Me</h3>
-            <div className="about-container">
-                <div> 
-                    {/* <Img fluid={data.allContentfulAboutMe.edges.node.aboutMeImage.fluid} /> */}
-                </div>
-            </div>
+            <h3 className="about-title">About</h3>
+                {data.allContentfulAboutMe.nodes.map((node) => (
+                    <div className="about-container">
+                        <div className="about-container__image">
+                            <Img fluid={node.aboutMeImage.fluid} className="about-container__image_img"/>
+                        </div>   
+                        <p className="about-container__description">{node.aboutMeSection.aboutMeSection}</p>
+                    </div>
+                ))}
         </section>
     )
 }

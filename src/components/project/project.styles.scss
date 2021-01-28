@@ -1,0 +1,103 @@
+.project-container-single {
+    width: 100%;
+    max-width: 98rem;
+    padding: 5rem;
+    background-color: #fff;
+    box-shadow: 0 1.4rem 8rem rgba(0,0,0, 0.2);
+    display: flex;
+    border-radius: 0.8rem;
+    margin-top: 2rem;
+}
+
+.project-container__img {
+    min-width: 35rem;
+    max-width: 35rem;
+    height: 30rem;
+    transform: translateX(-8rem);
+    position: relative;
+    .project-container__img_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 0.8rem;
+    }
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to right, rgba(79, 172, 254, 0.8), rgba(0, 242, 254, 0.8), );
+        box-shadow: 0.5rem 0.5rem 0.3rem 1px rgba(0,0,0,.05);
+        border-radius: 0.8rem;
+    }
+}
+
+.project-container__title {
+    font-size: 2.5rem;
+    margin-top : 1.5rem 0 2rem;
+    color: #4facfe;
+}
+
+.project-container__text {
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    color: rgba(0,0,0, 0.7);
+}
+
+.project-container__link {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    border-radius: 0.8rem;
+    text-decoration: none;
+
+    &:hover {
+        background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%)
+    }
+}
+
+
+@media screen and (max-width: 1068px) {
+    .project-container-single {
+        max-width: 80rem
+    }
+
+    .project-container__img_img {
+        min-width: 30rem;
+        max-width: 30rem;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .project-container-single {
+        max-width: 70rem;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .project-container-single {
+        padding: 2.5rem;
+        flex-direction: column;
+    }
+
+    .project-container__img {
+        min-width: 100%;
+        max-width: 100%;
+        transform: translate(0, -0.8rem)
+    }
+}
+
+
+.stack {
+    padding: 0.25rem 0.5rem;
+    border: 0.5rem black;
+}

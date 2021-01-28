@@ -1,0 +1,45 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.about-title {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.about-container__image {
+    min-width: 30rem;
+    max-width: 30rem;
+    min-height: 30rem;
+    max-height: 30rem;
+    border-radius: 0.8rem;
+
+    .about-container__image_img {
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        display: block;
+        border-radius: 0.8rem;
+    }
+}
+
+.about-container__description {
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}

@@ -1,6 +1,10 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
+import Project from '../project/project.component'
+import Img from 'gatsby-image';
+
+import './projects.styles.scss';
 
 const Projects = () => {
 
@@ -14,8 +18,9 @@ const Projects = () => {
                 websiteLink
                 description
                 id
-                    image {
-                        fluid {
+                title
+                image {
+                    fluid {
                             src
                             ...GatsbyContentfulFluid_tracedSVG
                             }
@@ -28,11 +33,13 @@ const Projects = () => {
 
     return (
         <section id="projects">
-            {data.allContentfulProjects.edges.map(({ node }, index) => (
-                <p>{node.websiteLink}</p>
-            ))}
-            hEllo from Projects
-        </section>
+            <h4>Projects</h4>
+            <div className="projects-container">
+                {data.allContentfulProjects.edges.map(({ node }, index) => (
+                    <Project key={node.id} index={index} data={node} />
+                ))}
+            </div>
+        </section>     
     )
 }
 
