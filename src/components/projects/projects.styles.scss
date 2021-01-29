@@ -3,6 +3,14 @@
     width: 1200px;
 }
 
+.projects-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
 .projects-container {
     display: flex;
     flex-direction: column;

@@ -16,6 +16,7 @@ const Projects = () => {
                 skills
                 projects
                 websiteLink
+                githubLink
                 description
                 id
                 title
@@ -33,7 +34,7 @@ const Projects = () => {
 
     return (
         <section id="projects">
-            <h4>Projects</h4>
+            <div className="projects-title">Projects</div>
             <div className="projects-container">
                 {data.allContentfulProjects.edges.map(({ node }, index) => (
                     <Project key={node.id} index={index} data={node} />

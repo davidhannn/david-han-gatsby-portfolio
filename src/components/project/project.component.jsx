@@ -18,13 +18,16 @@ const Project = ({ data: { title, skills, projects, websiteLink, description, id
                     <span>{title}</span>
                 </div>
                 <p className="project-container__text">{description}</p>
-                <a href={websiteLink} className="project-container__link">Visit Website</a>
+
+                <div className="project-container__skills-section">
+                    {skills.map((skill) => (<span className="project-container__skills-button">{skill}</span>))}
+                </div>
+                <div className="project-container__link-section">
+                    <a href={websiteLink} className="project-container__link">Visit Site</a>
+                    <a href={websiteLink} className="project-container__link">Github</a>
+                </div>
             </div>
-{/* 
-            <div className="projects-about-section">
-                {skills.map((skill) => (<p>{skill}</p>))}
-                <p className="stack">{description}</p>
-            </div> */}
+
         </div>
 
     )

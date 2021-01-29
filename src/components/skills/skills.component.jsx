@@ -20,7 +20,6 @@ const Skills = () => {
   })
 
   return (
-  
       <div data-aos="fade-up" className="skills-container">
         <h4>Skills</h4>
         <div className="icon-container">

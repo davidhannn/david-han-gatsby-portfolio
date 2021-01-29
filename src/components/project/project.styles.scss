@@ -63,6 +63,23 @@
     }
 }
 
+.project-container__text {
+    margin-top: 2rem;
+}
+
+.project-container__skills-section {
+    display: flex;
+    flex-direction: row;
+}
+.project-container__skills-button {
+    border: 2px solid #4facfe;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.project-container__link-section {
+    margin-top: 1rem;
+}
 
 @media screen and (max-width: 1068px) {
     .project-container-single {
