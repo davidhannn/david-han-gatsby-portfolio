@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Img from 'gatsby-image';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 import GithubIcon from "../../assets/github.svg"
 import ExternalLinkIcon from "../../assets/external-link.svg"
@@ -8,8 +10,14 @@ import './project.styles.scss';
 
 const Project = ({ data: { title, skills, projects, websiteLink, description, id, image }}) => {
 
+
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, [])
+
+
     return (
-        <div className="project-container-single">
+        <div className="project-container-single" data-aos="fade-up" data-aos-duration="1000">
             <div className="project-container__img">
                 <Img fluid={image.fluid} alt="" className="project-container__img_img"/>
             </div>

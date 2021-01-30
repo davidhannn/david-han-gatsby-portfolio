@@ -15,7 +15,7 @@ const Hero = () => {
     }, [])
 
     return (
-            <div className="hero-container">
+        <div className="hero-container">
                 <h1><span>David Han</span></h1>
                 <span class="hero-container-description">Web Developer</span>
                 <button className="hero-container__resume">View Resume</button>
