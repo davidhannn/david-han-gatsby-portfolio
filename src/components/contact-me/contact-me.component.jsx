@@ -2,41 +2,34 @@ import React, { useEffect } from "react"
 import Aos from "aos"
 import "aos/dist/aos.css"
 
+
+import GithubIcon from "../../assets/github.svg"
+import LinkedInIcon from "../../assets/linkedin.svg"
+import FacebookIcon from "../../assets/facebook.svg"
+import InstagramIcon from "../../assets/instagram.svg"
+import EmailIcon from "../../assets/email.svg"
+
+import './contact-me.styles.scss'
+
 const Contact = () => {
+
   useEffect(() => {
     Aos.init({ duration: 1000 })
   })
+
   return (
-    <section data-aos="fade-down" className="contact-section">
-      <article className="contact-form">
-        <h3>Contact Me!</h3>
-        <p>If you liked any of my projects, please feel free to contact me!</p>
-        <form action="https://formspree.io/davidhan2392@gmail.com" method="POST">
-          <div className="form-group">
-            <input
-              type="text"
-              name="name"
-              placeholder="name"
-              className="form-control"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="email"
-              className="form-control"
-            />
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="message"
-              className="form-control"
-            ></textarea>
-            <button type="submit" className="submit-btn btn">
-              Send Email
-            </button>
-          </div>
-        </form>
-      </article>
+    <section className="contact-section">
+        <h2 className="contact-section-title">Contact Me!</h2>
+        <a href="mailto:davidhan2392@gmail.com"className="contact-section__email">
+          <EmailIcon />
+          <p>davidhan2392@gmail.com</p>
+        </a>
+        <div className="contact-section-links-container">
+                    <button className="contact-section-links-button"><GithubIcon/><span>Github</span></button>
+                    <button className="contact-section-links-button"><LinkedInIcon />LinkedIn</button>
+                    <button className="contact-section-links-button"><FacebookIcon />Facebook</button>
+                    <button className="contact-section-links-button"><InstagramIcon />Instagram</button>
+            </div>
     </section>
   )
 }
