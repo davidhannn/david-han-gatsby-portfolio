@@ -24,7 +24,7 @@ const data = useStaticQuery(graphql`
 `)
 
     return (
-        <section id="about">
+        <section id="aboutMe">
             <h3 className="about-title">About</h3>
                 {data.allContentfulAboutMe.nodes.map((node) => (
                     <div className="about-container">
