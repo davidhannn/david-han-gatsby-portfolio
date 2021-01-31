@@ -18,7 +18,7 @@ const Contact = () => {
   })
 
   return (
-    <section className="contact-section">
+    <section id="contactMe" className="contact-section">
         <h2 className="contact-section-title">Contact Me!</h2>
         <a href="mailto:davidhan2392@gmail.com"className="contact-section__email">
           <EmailIcon />
