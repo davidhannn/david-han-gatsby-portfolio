@@ -3,22 +3,45 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    justify-content: center;
     background-color: #45246e;
     height: 40vh;
+    width: 100vw;
     color: white;
+}
+
+.contact-section-title {
+    position: absolute;
+    top: 4rem;
 }
 
 .contact-section__email {
     display: flex;
     flex-direction: row;
-    text-outline: none;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 80px;
+    transition: 0.3s;
+    &:hover {
+        border: 2px solid white;
+        // border-radius: 80px;
+    }
+}
+
+svg#Capa_1 {
+    width: 50px;
+    height: 30px;
 }
 
 .contact-section-links-container {
     width: 100%;
+    position: absolute;
+    bottom: 1rem;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
     margin-bottom: 3rem;
 }
 
@@ -30,10 +53,33 @@
     color: white;
     border-radius: 80px;
     margin-top: 2rem;
+    margin-right: 1rem;
     background-color: #330066;
     font-size: 1.5rem;
-    
+    transition: 0.3s;
+
     &:hover {
         border: 2px solid white;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    // .contact-section {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+
+    // .contact-section-links-container {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+
+    .contact-section-links-button {
+
+        span {
+            display: none;
+        }
     }
 }

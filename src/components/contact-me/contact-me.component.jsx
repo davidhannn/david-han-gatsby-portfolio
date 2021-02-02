@@ -22,13 +22,13 @@ const Contact = () => {
         <h2 className="contact-section-title">Contact Me!</h2>
         <a href="mailto:davidhan2392@gmail.com"className="contact-section__email">
           <EmailIcon />
-          <p>davidhan2392@gmail.com</p>
+          <span>davidhan2392@gmail.com</span>
         </a>
         <div className="contact-section-links-container">
                     <button className="contact-section-links-button"><GithubIcon/><span>Github</span></button>
-                    <button className="contact-section-links-button"><LinkedInIcon />LinkedIn</button>
-                    <button className="contact-section-links-button"><FacebookIcon />Facebook</button>
-                    <button className="contact-section-links-button"><InstagramIcon />Instagram</button>
+                    <button className="contact-section-links-button"><LinkedInIcon /><span>LinkedIn</span></button>
+                    <button className="contact-section-links-button"><FacebookIcon /><span>Facebook</span></button>
+                    <button className="contact-section-links-button"><InstagramIcon /><span>Instagram</span></button>
             </div>
     </section>
   )

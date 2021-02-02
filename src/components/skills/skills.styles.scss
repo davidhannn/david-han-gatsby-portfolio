@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     margin-top: 3rem;
-    width: 100%;
     height: 60vh;
     background-color: #45246e;
 }
@@ -16,4 +15,11 @@
     color: white;
     max-width: 1200px;
 
+}
+
+@media screen and (max-width: 860px) {
+    .icon-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
