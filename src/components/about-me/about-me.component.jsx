@@ -31,6 +31,7 @@ const AboutMe = () => {
 
     return (
         <section id="aboutMe">
+          <div className="about-me-container">
             <h3 className="about-title">About</h3>
                 {data.allContentfulAboutMe.nodes.map((node) => (
                     <div className="about-container">
@@ -40,6 +41,7 @@ const AboutMe = () => {
                         <p className="about-container__description" data-aos="fade-left" data-aos-duration="1500">{node.aboutMeSection.aboutMeSection}</p>
                     </div>
                 ))}
+            </div>
         </section>
     )
 }
