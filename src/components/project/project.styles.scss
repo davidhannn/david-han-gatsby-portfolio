@@ -76,6 +76,7 @@
 .project-container__skills-section {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .project-container__skills-button {
     border: 2px solid white;
@@ -83,6 +84,7 @@
     padding: 0.5rem;
     margin-right: 0.5rem;
     border-radius: 8px;
+    margin-bottom: 0.5rem;
 }
 
 .project-container__link-section {
@@ -92,24 +94,7 @@
     }
 }
 
-// @media screen and (max-width: 1250px) {
-//     .project-container-single {
-//         max-width: 80rem
-//     }
 
-//     .project-container__img_img {
-//         min-width: 30rem;
-//         max-width: 30rem;
-//     }
-// }
-
-// @media screen and (max-width: 868px) {
-//     .project-container-single {
-//         max-width: 70rem;
-//     }
-
-
-// }
 
 @media screen and (max-width: 1250px) {
     .project-container-single {
@@ -125,8 +110,67 @@
     }
 }
 
+@media screen and (max-width: 520px) {
+    .project-container-single {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
 
-.stack {
-    padding: 0.25rem 0.5rem;
-    border: 0.5rem black;
+    .project-container__title {
+        font-size: 1.5rem;
+        margin-top : 1.5rem;
+        color: white;
+    }
+    
+    .project-container__text {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        letter-spacing: 0.05rem;
+        color: white;
+    }
+
+    .project-container__img {
+        min-width: 20rem;
+        max-width: 20rem;
+        height: 20rem;
+        transform: translateX(-3rem);
+        position: relative;
+    }    
+    
+
+    .project-container__link {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #2a0055;
+        // background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+        border-radius: 0.8rem;
+        text-decoration: none;
+        transition: 0.3s;
+        &:hover {
+            // background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%)
+            border: 2px solid white;
+        }
+    }
+
+    .project-container__skills-button {
+        border: 2px solid white;
+        color: white;
+        padding: 0.3rem;
+        margin-right: 0.5rem;
+        border-radius: 8px;
+    }
+
+    
+.project-container__link-section {
+    margin-top: 1rem;
+    a {
+        margin-right: 1rem;
+    }
 }
+
+    
+}
+

@@ -11,8 +11,6 @@ import Footer from '../components/footer/footer.component'
 
 import './index.styles.scss';
 
-// import Image from "../components/image"
-// import SEO from "../components/seo"
 
 const IndexPage = () => (
   <div>
