@@ -25,10 +25,10 @@ const Contact = () => {
           <span>davidhan2392@gmail.com</span>
         </a>
         <div className="contact-section-links-container">
-                    <button className="contact-section-links-button"><GithubIcon/><span>Github</span></button>
-                    <button className="contact-section-links-button"><LinkedInIcon /><span>LinkedIn</span></button>
-                    <button className="contact-section-links-button"><FacebookIcon /><span>Facebook</span></button>
-                    <button className="contact-section-links-button"><InstagramIcon /><span>Instagram</span></button>
+                    <a href="https://github.com/davidhannn" className="contact-section-links-button"><GithubIcon/><span>Github</span></a>
+                    <a href="https://www.linkedin.com/in/david-han-21b856b5/" className="contact-section-links-button"><LinkedInIcon /><span>LinkedIn</span></a>
+                    <a href="https://www.facebook.com/david.han.520/" className="contact-section-links-button"><FacebookIcon /><span>Facebook</span></a>
+                    <a href="https://www.instagram.com/davidhan92/" className="contact-section-links-button"><InstagramIcon /><span>Instagram</span></a>
             </div>
     </section>
   )
