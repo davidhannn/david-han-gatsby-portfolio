@@ -2,6 +2,8 @@ import React, { Fragment, useState, useEffect } from 'react'
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 
+import {window} from 'browser-monads'
+
 import './navbar.styles.scss'
 
 const Navbar = () => {

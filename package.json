@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "aos": "^2.3.4",
+    "browser-monads": "^1.0.0",
     "dotenv": "^8.2.0",
     "gatsby": "^2.31.1",
     "gatsby-background-image": "^1.4.0",
