@@ -13,6 +13,7 @@ const Navbar = () => {
     const showSidebar = () => setSidebar(!sidebar)
 
     useEffect(() => {
+
         const handleWindowResize = () => setWidth(window.innerWidth)
         window.addEventListener("resize", handleWindowResize);
 

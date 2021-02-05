@@ -1,12 +1,14 @@
-// const path = require('path')
-// const slash = require('slash')
-
-// exports.createPages = ({ graphql, actions }) => {
-//     const { createPage } = actions;
-
-//     return graphql(
-//         `
-
-//         `
-//     )
-// }
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+    if (stage === "build-html") {
+      actions.setWebpackConfig({
+        module: {
+          rules: [
+            {
+              test: /bad-module/,
+              use: loaders.null(),
+            },
+          ],
+        },
+      })
+    }
+  }
