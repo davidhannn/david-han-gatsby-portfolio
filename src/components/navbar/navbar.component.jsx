@@ -29,21 +29,27 @@ const Navbar = () => {
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
             <ul className="nav-menu-items" onClick={showSidebar}>
                 <li className="navbar-toggle">
-                    <a className="menu-bars">
+                    <a href="#" className="menu-bars">
                         <AiIcons.AiOutlineClose />
                     </a>
                 </li>
                 <li className="nav-text">
-                    <span>About</span>
+                    <a href="#aboutMe">
+                        <span>About</span>
+                    </a>
                 </li>
                 <li className="nav-text">
-                    <span>Projects</span>
+                    <a href="#projects">
+                        <span>Projects</span>
+                    </a>
                 </li>
-                <li className="nav-text">
+                {/* <li className="nav-text">
                     <span>Skills</span>
-                </li>
+                </li> */}
                 <li className="nav-text">
-                    <span>Contact</span>
+                    <a href="#contact">
+                        <span>Contact</span>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -53,10 +59,10 @@ const Navbar = () => {
     const desktopComponent = () => (
         <nav className="navbar-desktop">
             <ul className="navbar-desktop__list">
-                <li><a href="#aboutMe" />About</li>
-                <li><a href="#skills" />Skills</li>
-                <li><a href="#projects" />Projects</li>
-                <li><a href="#contactMe" />Contact</li>
+                <li><a href="aboutMe" />About</li>
+                {/* <li><a href="#skills" />Skills</li> */}
+                <li><a href="projects" />Projects</li>
+                <li><a href="contact" />Contact</li>
             </ul>
         </nav>
     )

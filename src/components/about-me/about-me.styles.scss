@@ -4,8 +4,6 @@
     align-items: center;
     margin: 0 auto;
     width: 100vw;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
 }
 
 .about-me-container {
@@ -15,6 +13,7 @@
 .about-title {
     font-size: 3rem;
     margin-bottom: 4rem;
+    padding-top: 5rem;
     text-align: center;
 }
 
@@ -24,6 +23,7 @@
     justify-items: center;
     justify-content: space-between;
     align-content: center;
+    padding-bottom: 5rem;
 }
 
 .about-container__image {
