@@ -2,14 +2,15 @@ import React, { Fragment, useState, useEffect } from 'react'
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 
-import {window} from 'browser-monads'
 
 import './navbar.styles.scss'
 
 const Navbar = () => {
 
-    const [width, setWidth] = useState(window.innerWidth);
     const breakpoint = 620;
+    const [width, setWidth] = useState(
+        typeof window !== "undefined" ? window.innerWidth : breakpoint
+      );
     const [sidebar, setSidebar] = useState(false);
 
     const showSidebar = () => setSidebar(!sidebar)
