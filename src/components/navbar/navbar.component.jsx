@@ -8,9 +8,10 @@ import './navbar.styles.scss'
 const Navbar = () => {
 
     const breakpoint = 620;
-    const [width, setWidth] = useState(
-        typeof window !== "undefined" ? window.innerWidth : breakpoint
-      );
+    // const [width, setWidth] = useState(
+    //     typeof window !== "undefined" ? window.innerWidth : breakpoint
+    //   );
+    const [width, setWidth] = useState()
     const [sidebar, setSidebar] = useState(false);
 
     const showSidebar = () => setSidebar(!sidebar)
