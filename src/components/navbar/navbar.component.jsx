@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from 'react'
+import React, { Fragment, useState, useLayoutEffect } from 'react'
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 
@@ -15,7 +15,7 @@ const Navbar = () => {
 
     const showSidebar = () => setSidebar(!sidebar)
 
-    useEffect(() => {
+    useLayoutEffect(() => {
 
         const handleWindowResize = () => setWidth(window.innerWidth)
         window.addEventListener("resize", handleWindowResize);
