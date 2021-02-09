@@ -4,6 +4,10 @@
 
 My Portfolio site created with GatsbyJS using Contentful as the Headless CMS
 
+## Gif
+
+![Portfolio](https://user-images.githubusercontent.com/7605102/107318849-8f5c8580-6a52-11eb-9dc7-793a6cdcfe3c.gif)
+
 Demo: https://david-han.netlify.app/
 
 #### Technologies
