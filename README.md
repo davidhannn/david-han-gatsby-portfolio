@@ -4,16 +4,24 @@
 
 My Portfolio site created with GatsbyJS using Contentful as the Headless CMS
 
-## Screenshot
+Demo: https://david-han.netlify.app/
 
-## Gif 
+#### Technologies
 
-## serve with hot reload at localhost:8080
-gatsby develop
+- GatsbyJs
+- React
+- Contentful
+- SCSS
 
-## build for production with minification
-gatsby build
+#### How to Setup and Run 
 
-## build for production and view the bundle analyzer report
-gatsby build --report
+```html
+  // Local build
+  gatsby develop
 
+  // Production build
+  gatsby build
+```
+
+#### References
+Inspired by the Gatsby/Contentful tutorial by John Smilga (https://github.com/john-smilga)
