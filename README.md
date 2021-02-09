@@ -16,7 +16,7 @@ Demo: https://david-han.netlify.app/
 #### How to Setup and Run 
 
 ```html
-  // Local build
+  // Local build at http://localhost:8000/
   gatsby develop
 
   // Production build
