@@ -1,104 +1,115 @@
+// .diagonal-box {
+//   background-color: #171717;
+//   padding: 100px 0;
+//   transform: skew(0deg, -10deg) translateY(-120px);
+// }
+
 .hero-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    min-height: 90vh;
-    width: 100vw;
-    background-color: #45246e;
-    h1 span {
-        font-size: 5rem;
-        border: 10px solid white;
-        padding: 6px 14px;
-        color: white;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-height: 90vh;
+  width: 100vw;
+  //   padding: 150px 200px;
+  //   transform: skew(0deg, 10deg);
+
+  margin: 0 auto;
+  background-color: #171717;
+  //   background: linear-gradient(to right bottom, #171717 75%, #212531 25%);
+  //   background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
+  h1 span {
+    font-size: 5rem;
+    border: 10px solid white;
+    padding: 6px 14px;
+    color: white;
+  }
 }
 
 .hero-container-description {
-    font-size: 2rem;
-    color: white;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: white;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 #hero-container-text {
-    font-size: 4rem;
-    font-weight: 700;
-    color: black;
+  font-size: 4rem;
+  font-weight: 700;
+  color: black;
 }
 
 #hero-container-name {
-    font-size: 7rem;
-    font-weight: bold;
-    color: #7851a9;
+  font-size: 7rem;
+  font-weight: bold;
+  color: #7851a9;
 }
 
 .hero-container__resume {
-    position: relative;
-    display: inline-block;
-    padding: 10px 30px;
-    text-decoration: none;
-    color: white;
-    border-radius: 80px;
-    margin-top: 2rem;
-    background-color: #330066;
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+  border-radius: 80px;
+  margin-top: 2rem;
+  background-color: #330066;
 
-    &:hover {
-        border: 2px solid white;
-    }
+  &:hover {
+    border: 2px solid white;
+  }
 }
 
 .icon-scroll,
 .icon-scroll::before {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .icon-scroll {
-    width: 30px;
-    height: 50px;
-    border: 2px solid #fff;
-    border-radius: 25px;
-    cursor: pointer;
-    bottom: 2rem;
+  width: 30px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  bottom: 2rem;
 }
 
 .icon-scroll::before {
-    content: '';
-    width: 8px;
-    height: 8px;
-    background: #fff;
-    margin-left: -4px;
-    top: 15px;
-    border-radius: 50%;
-    animation: 1.5s scroll cubic-bezier(0.65, -0.55, 0.25, 1.5) infinite
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 15px;
+  border-radius: 50%;
+  animation: 1.5s scroll cubic-bezier(0.65, -0.55, 0.25, 1.5) infinite;
 }
 
 @keyframes scroll {
-    0% {
-        opacity: 0;
-        transform: translateY(0) scale(0.5);
-    }
-    10% {
-        opacity: 1;
-        transform: scale(1);
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(30px) scale(0.5);
-    }
-
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.5);
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.5);
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .hero-container {
-        h1 span {
-            font-size: 3rem;
-            border: 10px solid white;
-            padding: 6px 14px;
-            color: white;
-        }
+  .hero-container {
+    h1 span {
+      font-size: 3rem;
+      border: 10px solid white;
+      padding: 6px 14px;
+      color: white;
     }
+  }
 }
