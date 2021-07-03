@@ -22,7 +22,7 @@ const Skills = () => {
   })
 
   return (
-    <section id="#skills" className="skills-container">
+    <section id="skills" className="skills-container">
       <svg
         _ngcontent-serverApp-c84=""
         viewBox="0 0 100 100"

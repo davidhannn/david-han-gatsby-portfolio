@@ -1,79 +1,42 @@
-import React, { Fragment, useState, useLayoutEffect } from 'react'
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
+import React, { Fragment, useState, useLayoutEffect } from "react"
+import * as FaIcons from "react-icons/fa"
+import * as AiIcons from "react-icons/ai"
 
+import { MenuItems } from "./menu-items"
 
-import './navbar.styles.scss'
+import "./navbar.styles.scss"
 
 const Navbar = () => {
+  const [clicked, setClicked] = useState(false)
 
-    const breakpoint = 620;
-    // const [width, setWidth] = useState(
-    //     typeof window !== "undefined" ? window.innerWidth : breakpoint
-    //   );
-    const [width, setWidth] = useState()
-    const [sidebar, setSidebar] = useState(false);
+  const handleClick = () => {
+    setClicked(!clicked)
+  }
 
-    const showSidebar = () => setSidebar(!sidebar)
+  return (
+    <nav className="navbar-items">
+      {/* <h1 className="navbar-logo">React</h1> */}
 
-    useLayoutEffect(() => {
-
-        const handleWindowResize = () => setWidth(window.innerWidth)
-        window.addEventListener("resize", handleWindowResize);
-
-        return () => window.removeEventListener("resize", handleWindowResize)
-    }, []);
-
-    const mobileComponent = () => (
-        <Fragment>
-            <div className="navbar">
-            <a href="#" className="menu-bars">
-                <FaIcons.FaBars onClick={showSidebar}/>
-            </a>
-        </div>
-        <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-            <ul className="nav-menu-items" onClick={showSidebar}>
-                <li className="navbar-toggle">
-                    <a href="#" className="menu-bars">
-                        <AiIcons.AiOutlineClose />
-                    </a>
-                </li>
-                <li className="nav-text">
-                    <a href="#aboutMe">
-                        <span>About</span>
-                    </a>
-                </li>
-                <li className="nav-text">
-                    <a href="#projects">
-                        <span>Projects</span>
-                    </a>
-                </li>
-                {/* <li className="nav-text">
-                    <span>Skills</span>
-                </li> */}
-                <li className="nav-text">
-                    <a href="#contact">
-                        <span>Contact</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        </Fragment>
-    )
-
-    const desktopComponent = () => (
-        <nav className="navbar-desktop">
-            <ul className="navbar-desktop__list">
-                <li><a href="aboutMe" />About</li>
-                {/* <li><a href="#skills" />Skills</li> */}
-                <li><a href="projects" />Projects</li>
-                <li><a href="contact" />Contact</li>
-            </ul>
-        </nav>
-    )
-    return (
-        width < breakpoint ? mobileComponent() : desktopComponent()
-    )
+      <div className="menu-icon" onClick={handleClick}>
+        {clicked === false ? (
+          <FaIcons.FaBars style={{ color: "#f44336" }} />
+        ) : (
+          <AiIcons.AiOutlineClose style={{ color: "#f44336" }} />
+        )}
+      </div>
+      <ul className={clicked ? "nav-menu active" : "nav-menu"}>
+        {MenuItems.map((item, index) => {
+          return (
+            <li>
+              <a className={item.cName} href={item.url}>
+                {item.title}
+              </a>
+            </li>
+          )
+        })}
+      </ul>
+    </nav>
+  )
 }
 
 export default Navbar

@@ -1,143 +1,116 @@
-$backgroundColor: #171717;
-
-.navbar {
+.navbar-items {
   background-color: #171717;
   height: 80px;
-  width: 100%;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
+  font-size: 1.2rem;
+  position: fixed;
+  width: 100%;
+  max-width: 100vw;
+  z-index: 1000;
 }
 
-.menu-bars {
-  margin-left: 2rem;
-  font-size: 2rem;
-  background: none;
-  color: white;
+.navbar-logo {
+}
+
+.fa-react {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
 }
 
 .nav-menu {
-  background-color: rgba(10, 17, 42, 0.8);
-  display: flex;
-  width: 150px;
-  height: 100vh;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: -100%;
-  transition: 850ms;
-  z-index: 200;
-}
-
-.nav-menu.active {
-  left: 0;
-  transition: 500ms;
-}
-
-.nav-text {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  padding: 8px 0px 8px 16px;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
   list-style: none;
-  height: 60px;
-  a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    width: 95%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 16px;
-    border-radius: 4px;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
 
-    &:hover {
-      background-color: #1a83ff;
-    }
+.nav-links {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  position: relative;
+
+  &:hover:after {
+    bottom: -4px;
+    right: 0;
+    left: 20px;
+    height: 2px;
+    width: 20px;
+    background-color: #f44336;
+    content: "";
+    transition: all 1s ease 1s;
+    position: absolute;
   }
 }
 
-.nav-menu-items {
-  width: 100%;
+// .nav-links:after:hover {
+// }
+
+.menu-icon {
+  display: none;
 }
 
-.navbar-toggle {
-  background-color: #060b26;
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.nav-links-mobile {
+  display: none;
 }
 
-.navbar-desktop {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: $backgroundColor;
-  color: white;
-  height: 80px;
-  width: 100%;
-}
+@media screen and (max-width: 960px) {
+  .navbar-items {
+    position: fixed;
+  }
 
-.navbar-desktop__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 600px;
-  list-style: none;
-  li {
-    position: relative;
-    letter-spacing: 2px;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 16px;
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #171717;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: #f44336;
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
     cursor: pointer;
-    outline: none;
-    border: none;
-
-    &:before {
-      position: absolute;
-      content: "";
-      height: 0;
-      width: 0;
-      border: 4px solid transparent;
-      bottom: 0;
-      left: 0;
-      box-sizing: border-box;
-    }
-
-    &:after {
-      position: absolute;
-      content: "";
-      height: 0;
-      width: 0;
-      border: 4px solid transparent;
-      top: 0;
-      right: 0;
-      box-sizing: border-box;
-    }
-
-    &:hover:before {
-      height: 100%;
-      width: 100%;
-      border: 4px solid white;
-      border-right: none;
-      border-bottom: none;
-      transition: height 0.1s linear, width 0.1s linear 0.1s;
-    }
-
-    &:hover:after {
-      height: 100%;
-      width: 100%;
-      border: 4px solid white;
-      border-left: none;
-      border-top: none;
-      transition: height 0.1s linear, width 0.1s linear 0.1s;
-    }
   }
 }

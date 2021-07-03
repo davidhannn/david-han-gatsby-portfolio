@@ -16,7 +16,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <section className="hero-container">
+    <section id="hero" className="hero-container">
       <h1 data-aos="fade-up" data-aos-duration="1000">
         <span>David Han</span>
       </h1>

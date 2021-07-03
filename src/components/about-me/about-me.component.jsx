@@ -2,6 +2,7 @@ import React, { useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import "./about-me.styles.scss"
 import Img from "gatsby-image"
+import StyledButton from "../styled-button/styled-button.component"
 
 import Aos from "aos"
 import "aos/dist/aos.css"
