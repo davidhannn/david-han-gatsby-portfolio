@@ -1,25 +1,69 @@
+.slicerDark {
+  width: 100%;
+  height: 10vw;
+  margin: 0;
+  fill: #171717;
+  margin-bottom: 50px;
+}
+
 .skills-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 3rem;
-    height: 60vh;
-    background-color: #45246e;
+  background-color: #010101;
+  height: 50vh;
 }
 
-.icon-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
-    max-width: 1200px;
-
+.skills-title {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  font-size: 2.4rem;
+  font-weight: 400 !important;
+  position: relative;
 }
 
-// @media screen and (max-width: 860px) {
-//     .icon-container {
-//         display: flex;
-//         flex-direction: column;
-//     }
-// }
+.skills-title:after {
+  content: "";
+  width: 100px;
+  position: absolute;
+  margin: 0 auto;
+  height: 3px;
+  background: #f44336;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+
+.skills-container__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skills-box {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid #f44336;
+  background-color: #171717;
+  padding: 0.5rem;
+}
+
+.skills-box-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+.skills-box-title {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: white;
+  padding: 0.1rem;
+}

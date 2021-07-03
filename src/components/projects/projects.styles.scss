@@ -16,10 +16,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4rem;
+  font-size: 2.4rem;
+  font-weight: 400 !important;
   margin-bottom: 4rem;
   padding-top: 4rem;
   color: white;
+  position: relative;
 }
 
 .projects-container {
@@ -31,4 +33,16 @@
   margin-bottom: 8rem;
   margin: 0 auto;
   width: 90%;
+}
+
+.projects-title:after {
+  content: "";
+  width: 100px;
+  position: absolute;
+  margin: 0 auto;
+  height: 3px;
+  background: #f44336;
+  left: 0;
+  right: 0;
+  bottom: -10px;
 }
