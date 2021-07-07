@@ -39,6 +39,7 @@ const AboutMe = () => {
       >
         <polygon _ngcontent-serverApp-c84="" points="0,0 100,0 0,100"></polygon>
       </svg>
+      <div className="about-title">About</div>
       <div className="about-me-card-container">
         <div className="about-me-card">
           {data.allContentfulAboutMe.nodes.map(node => (
@@ -49,9 +50,13 @@ const AboutMe = () => {
                   className="about-container__image_img"
                 />
               </div>
-              <p className="about-container__description">
-                {node.aboutMeSection.aboutMeSection}
-              </p>
+              <div className="about-container__right">
+                <p className="about-container__description">
+                  {node.aboutMeSection.aboutMeSection}
+                </p>
+
+                <StyledButton>View Resume</StyledButton>
+              </div>
             </div>
           ))}
         </div>

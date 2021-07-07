@@ -20,6 +20,8 @@ const Project = ({
       <div className="project-container__img">
         <Img
           fluid={image.fluid}
+          imgStyle={{ objectFit: "contain" }}
+          style={{ height: "100%", width: "100%" }}
           alt=""
           className="project-container__img_img"
         />

@@ -1,7 +1,7 @@
 #aboutMe {
   background-color: #010101;
   padding-bottom: 50px;
-  height: 80vh;
+  height: 100vh;
 }
 
 .slicer {
@@ -15,6 +15,29 @@
   margin-bottom: 50px;
 }
 
+.about-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  font-weight: 400 !important;
+  margin-bottom: 4rem;
+  padding-top: 4rem;
+  color: white;
+  position: relative;
+}
+
+.about-title:after {
+  content: "";
+  width: 80px;
+  position: absolute;
+  margin: 0 auto;
+  height: 3px;
+  background: #f44336;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
 .about-me-card-container {
   display: flex;
   flex-wrap: wrap-reverse;
@@ -23,7 +46,7 @@
 }
 
 .about-me-card {
-  max-width: 60%;
+  max-width: 70%;
   display: flex;
   margin: 0 auto;
   background-color: #171717;
@@ -38,75 +61,144 @@
   align-items: center;
   color: #b3b3b3;
   font-size: 16px;
+  padding: 2rem;
 }
+
 .about-container__image {
   display: block;
   margin-left: 2rem;
-  width: 20%;
+  width: 15rem;
+  height: 20rem;
   border: 1px solid #f44336;
   //   min-width: 5rem;
   //   max-width: 5rem;
   //   min-height: 5rem;
   //   max-height: 5rem;
-  border-radius: 0.5rem;
 
   .about-container__image_img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-    border-radius: 0.5rem;
   }
 }
 
-.about-container__description {
+.about-container__right {
   width: 60%;
   line-height: 2;
 }
 
-@media screen and (max-width: 1100px) {
-  .about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.about-container__description {
+  margin-bottom: 3rem;
+}
 
-  .about-container__image {
-    display: flex;
-    justify-content: center;
-    min-width: 20rem;
-    max-width: 20rem;
-    min-height: 20rem;
-    max-height: 20rem;
-    border-radius: 0.8rem;
-
-    .about-container__image_img {
-      width: 70%;
-      height: 70%;
-    }
-  }
-
-  .about-container__description {
-    font-size: 1.4rem;
-    letter-spacing: 0.05rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 50px;
-    height: 100%;
-    width: 100%;
+@media screen and (max-width: 1350px) {
+  .about-me-card {
+    max-width: 80%;
   }
 }
 
-@media screen and (max-width: 800px) {
-  .about-container__description {
-    font-size: 1.2rem;
-    letter-spacing: 0.03rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 30px;
-    height: 100%;
+@media screen and (max-width: 1200px) {
+  .about-me-card {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .about-me-card {
     width: 100%;
+  }
+  .about-container {
+    padding: 0.1rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  #aboutMe {
+    height: 100vh;
+  }
+
+  .about-me-card {
+    width: 70%;
+  }
+  .about-container {
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2rem;
+    // overflow: hidden;
+    height: 100%;
+  }
+
+  .about-title {
+    padding-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .about-me-card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about-container__image {
+    min-width: 50%;
+    max-width: 50%;
+    min-height: 40%;
+    max-height: 40%;
+    margin-left: 0;
+    // transform: translate(0, -3rem);
+  }
+  .about-container__right {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-container__description {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 698px) {
+  .about-container__image {
+    min-width: 70%;
+    max-width: 70%;
+    min-height: 40%;
+    max-height: 40%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 596px) {
+  .about-container__image {
+    min-width: 70%;
+    max-width: 70%;
+    min-height: 50%;
+    max-height: 50%;
+  }
+  .about-me-card-container {
+    width: 100vw;
+  }
+
+  .about-me-card {
+    width: 100%;
+  }
+
+  .about-container {
+    height: 100%;
+    padding: 2rem;
+  }
+  .about-container__right {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .about-container__image {
+    min-width: 60%;
+    max-width: 60%;
+    min-height: 40%;
+    max-height: 40%;
   }
 }
