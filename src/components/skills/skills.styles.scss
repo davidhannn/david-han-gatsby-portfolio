@@ -67,3 +67,16 @@
   color: white;
   padding: 0.1rem;
 }
+
+@media screen and (max-width: 1120px) {
+  .skills-container__row {
+    display: flex;
+    flex-direction: column;
+  }
+  .skills-box {
+    margin-bottom: 2rem;
+  }
+  .skills-container {
+    height: 70vh !important;
+  }
+}

@@ -15,7 +15,7 @@
   min-width: 30rem;
   max-width: 30rem;
   // height: 30rem;
-  border: 1px solid #f44336;
+
   margin-right: 2rem;
 
   // .project-container__img_img {
@@ -136,62 +136,62 @@
   }
 }
 
-@media screen and (max-width: 520px) {
-  .project-container-single {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
+// @media screen and (max-width: 520px) {
+//   .project-container-single {
+//     font-size: 1rem;
+//     margin-bottom: 1rem;
+//   }
 
-  .project-container__title {
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-    color: white;
-  }
+//   .project-container__title {
+//     font-size: 1.5rem;
+//     margin-top: 1.5rem;
+//     color: white;
+//   }
 
-  .project-container__text {
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    letter-spacing: 0.05rem;
-    color: white;
-  }
+//   .project-container__text {
+//     margin-bottom: 1rem;
+//     font-size: 1rem;
+//     letter-spacing: 0.05rem;
+//     color: white;
+//   }
 
-  .project-container__img {
-    min-width: 20rem;
-    max-width: 20rem;
-    height: 20rem;
-    transform: translateX(-3rem);
-    position: relative;
-  }
+//   .project-container__img {
+//     min-width: 20rem;
+//     max-width: 20rem;
+//     height: 20rem;
+//     transform: translateX(-3rem);
+//     position: relative;
+//   }
 
-  .project-container__link {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    letter-spacing: 1px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #2a0055;
-    // background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-    border-radius: 0.8rem;
-    text-decoration: none;
-    transition: 0.3s;
-    &:hover {
-      // background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%)
-      border: 2px solid white;
-    }
-  }
+//   .project-container__link {
+//     display: inline-block;
+//     padding: 0.5rem 1rem;
+//     letter-spacing: 1px;
+//     font-size: 1rem;
+//     color: #fff;
+//     background-color: #2a0055;
+//     // background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+//     border-radius: 0.8rem;
+//     text-decoration: none;
+//     transition: 0.3s;
+//     &:hover {
+//       // background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%)
+//       border: 2px solid white;
+//     }
+//   }
 
-  .project-container__skills-button {
-    border: 2px solid white;
-    color: white;
-    padding: 0.3rem;
-    margin-right: 0.5rem;
-    border-radius: 8px;
-  }
+//   .project-container__skills-button {
+//     border: 2px solid white;
+//     color: white;
+//     padding: 0.3rem;
+//     margin-right: 0.5rem;
+//     border-radius: 8px;
+//   }
 
-  .project-container__link-section {
-    margin-top: 1rem;
-    a {
-      margin-right: 1rem;
-    }
-  }
-}
+//   .project-container__link-section {
+//     margin-top: 1rem;
+//     a {
+//       margin-right: 1rem;
+//     }
+//   }
+// }
