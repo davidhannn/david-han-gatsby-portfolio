@@ -40,28 +40,24 @@ const Contact = () => {
             className="contact-section-links-button"
           >
             <GithubIcon />
-            <span>Github</span>
           </a>
           <a
             href="https://www.linkedin.com/in/david-han-21b856b5/"
             className="contact-section-links-button"
           >
             <LinkedInIcon />
-            <span>LinkedIn</span>
           </a>
           <a
             href="https://www.facebook.com/david.han.520/"
             className="contact-section-links-button"
           >
             <FacebookIcon />
-            <span>Facebook</span>
           </a>
           <a
             href="https://www.instagram.com/davidhan92/"
             className="contact-section-links-button"
           >
             <InstagramIcon />
-            <span>Instagram</span>
           </a>
         </div>
       </div>

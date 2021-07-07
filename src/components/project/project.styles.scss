@@ -78,7 +78,7 @@
 }
 .project-container__link {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 1rem;
   letter-spacing: 1px;
   font-size: 1.2rem;
   color: white;
@@ -130,6 +130,8 @@
   }
 
   .project-container__img {
+    max-height: 100%;
+    min-height: 100%;
     min-width: 100%;
     max-width: 100%;
     transform: translate(0, -4rem);
