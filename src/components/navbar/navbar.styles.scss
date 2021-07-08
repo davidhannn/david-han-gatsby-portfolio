@@ -11,14 +11,6 @@
   z-index: 1000;
 }
 
-.navbar-logo {
-}
-
-.fa-react {
-  margin-left: 0.5rem;
-  font-size: 1.6rem;
-}
-
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(5, auto);
@@ -28,6 +20,13 @@
   width: 70vw;
   justify-content: end;
   margin-right: 2rem;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  border: 2px solid #f44336;
+  padding: 6px 6px;
+  color: #f44336;
 }
 
 .nav-links {

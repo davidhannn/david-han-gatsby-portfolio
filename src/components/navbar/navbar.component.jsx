@@ -15,7 +15,16 @@ const Navbar = () => {
 
   return (
     <nav className="navbar-items">
-      {/* <h1 className="navbar-logo">React</h1> */}
+      <div className="navbar-logo">
+        <a
+          href="#hero"
+          style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}
+        >
+          <span>
+            <span style={{ color: "#f44336" }}>&lt;/&gt;</span>DH
+          </span>
+        </a>
+      </div>
 
       <div className="menu-icon" onClick={handleClick}>
         {clicked === false ? (
