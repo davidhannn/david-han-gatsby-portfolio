@@ -2,6 +2,7 @@
   background-color: #010101;
   padding-bottom: 50px;
   height: 100vh;
+  overflow-y: auto;
 }
 
 .slicer {
@@ -204,11 +205,40 @@
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 450px) {
+  .about-title {
+    padding-top: 0;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .about-me-card-container {
+    height: 450px;
+  }
+
+  .about-container {
+    padding: 0rem 0.2rem;
+    transform: scale(0.9);
+  }
+
   .about-container__image {
     min-width: 70%;
     max-width: 70%;
     min-height: 40%;
     max-height: 40%;
+  }
+
+  .about-container__right {
+    font-size: 14px;
+  }
+
+  .about-container__description {
+    margin-bottom: 1rem;
+  }
+
+  .styled-button {
+    padding: 5px 10px;
+    letter-spacing: 1.5px;
+    font-size: 12px;
   }
 }

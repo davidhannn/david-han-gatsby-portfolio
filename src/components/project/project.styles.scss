@@ -138,6 +138,13 @@
   }
 }
 
+@media screen and (max-width: 450px) {
+  .project-container__link-section a {
+    padding: 0.5rem;
+    font-size: 16px;
+  }
+}
+
 // @media screen and (max-width: 520px) {
 //   .project-container-single {
 //     font-size: 1rem;

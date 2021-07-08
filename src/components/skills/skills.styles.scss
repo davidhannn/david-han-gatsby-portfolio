@@ -77,6 +77,21 @@
     margin-bottom: 2rem;
   }
   .skills-container {
-    height: 70vh !important;
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .skills-container {
+    height: 100vh;
+  }
+
+  .skills-title {
+    font-size: 2rem;
+  }
+
+  .skills-box {
+    transform: scale(0.9);
+    margin-bottom: 1rem;
   }
 }
