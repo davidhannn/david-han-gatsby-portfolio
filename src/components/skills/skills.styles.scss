@@ -9,7 +9,7 @@
 .skills-container {
   background-color: #010101;
   height: 50vh;
-  overflow-y: auto;
+  // overflow-y: auto;
 }
 
 .skills-title {
@@ -84,7 +84,7 @@
 
 @media screen and (max-width: 500px) {
   .skills-container {
-    height: 100vh;
+    height: 80vh;
   }
 
   .skills-title {

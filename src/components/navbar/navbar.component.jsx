@@ -36,11 +36,13 @@ const Navbar = () => {
       <ul className={clicked ? "nav-menu active" : "nav-menu"}>
         {MenuItems.map((item, index) => {
           return (
-            <li>
-              <a className={item.cName} href={item.url}>
-                {item.title}
-              </a>
-            </li>
+            <div key={index}>
+              <li onClick={handleClick}>
+                <a className={item.cName} href={item.url}>
+                  {item.title}
+                </a>
+              </li>
+            </div>
           )
         })}
       </ul>

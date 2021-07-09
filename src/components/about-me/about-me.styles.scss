@@ -2,7 +2,7 @@
   background-color: #010101;
   padding-bottom: 50px;
   height: 100vh;
-  overflow-y: auto;
+  // overflow-y: auto;
 }
 
 .slicer {
@@ -62,7 +62,7 @@
   align-items: center;
   color: #b3b3b3;
   font-size: 16px;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .about-container__image {
@@ -186,7 +186,7 @@
     padding: 2rem;
   }
   .about-container__right {
-    margin-top: 0.5rem;
+    margin-top: 0.1rem;
   }
 }
 
@@ -237,7 +237,7 @@
   }
 
   .styled-button {
-    padding: 5px 10px;
+    padding: 5px 5px;
     letter-spacing: 1.5px;
     font-size: 12px;
   }
