@@ -102,13 +102,16 @@ svg#Capa_1 {
 
 @media screen and (max-width: 500px) {
   .contact-section {
-    height: 50vh;
+    height: 40vh;
   }
   .contact-section-title {
     font-size: 2rem;
   }
 
   .contact-section__email {
+    transform: scale(0.8);
+  }
+  .contact-section-links-container {
     transform: scale(0.8);
   }
 }
