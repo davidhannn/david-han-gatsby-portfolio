@@ -9,7 +9,16 @@ import ExternalLinkIcon from "../../assets/external-link.svg"
 import "./project.styles.scss"
 
 const Project = ({
-  data: { title, skills, projects, websiteLink, description, id, image },
+  data: {
+    title,
+    skills,
+    projects,
+    websiteLink,
+    githubLink,
+    description,
+    id,
+    image,
+  },
 }) => {
   useEffect(() => {
     Aos.init({ duration: 1000 })
@@ -41,7 +50,7 @@ const Project = ({
           <a href={websiteLink} className="project-container__link">
             Visit Site
           </a>
-          <a href={websiteLink} className="project-container__link">
+          <a href={githubLink} className="project-container__link">
             Github
           </a>
         </div>

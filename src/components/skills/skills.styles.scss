@@ -8,7 +8,8 @@
 
 .skills-container {
   background-color: #010101;
-  height: 50vh;
+  height: 60vh;
+  position: relative;
   // overflow-y: auto;
 }
 
@@ -51,6 +52,7 @@
   border: 1px solid #f44336;
   background-color: #171717;
   padding: 0.5rem;
+  color: white;
 }
 
 .skills-box-icons {

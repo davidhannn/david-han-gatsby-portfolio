@@ -18,7 +18,7 @@ const Hero = () => {
     Aos.init({ duration: 1000 })
     init(textRef.current, {
       showCursor: false,
-      strings: ["Web Developer", "Programmer", "Engineer", "Gamer"],
+      strings: ["Web Developer", "Programmer", "Engineer"],
     })
   }, [])
 

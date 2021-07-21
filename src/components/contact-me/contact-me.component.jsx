@@ -7,6 +7,7 @@ import LinkedInIcon from "../../assets/linkedin.svg"
 import FacebookIcon from "../../assets/facebook.svg"
 import InstagramIcon from "../../assets/instagram.svg"
 import EmailIcon from "../../assets/email.svg"
+import MailIcon from "../../assets/envelope.svg"
 
 import "./contact-me.styles.scss"
 
@@ -26,14 +27,14 @@ const Contact = () => {
         <polygon _ngcontent-serverApp-c84="" points="0,0 0,100 100,0"></polygon>
       </svg>
       <div className="contact-section">
-        <h2 className="contact-section-title">Contact Me!</h2>
-        <a
+        <h2 className="contact-section-title">Contact</h2>
+        {/* <a
           href="mailto:davidhan2392@gmail.com"
           className="contact-section__email"
         >
           <EmailIcon />
           <span>davidhan2392@gmail.com</span>
-        </a>
+        </a> */}
         <div className="contact-section-links-container">
           <a
             href="https://github.com/davidhannn"
@@ -47,7 +48,7 @@ const Contact = () => {
           >
             <LinkedInIcon />
           </a>
-          <a
+          {/* <a
             href="https://www.facebook.com/david.han.520/"
             className="contact-section-links-button"
           >
@@ -58,6 +59,13 @@ const Contact = () => {
             className="contact-section-links-button"
           >
             <InstagramIcon />
+          </a> */}
+
+          <a
+            href="mailto:davidhan2392@gmail.com"
+            className="contact-section-links-button"
+          >
+            <EmailIcon />
           </a>
         </div>
       </div>
